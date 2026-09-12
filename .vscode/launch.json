@@ -8,12 +8,14 @@
       "name": "Launch Mergington WebApp",
       "type": "debugpy",
       "request": "launch",
+      "python": "C:\\Projects\\GH300\\.venv-windows\\Scripts\\python.exe",
       "module": "uvicorn",
       "args": [
         "src.app:app",
-        "--reload",
-        "--reload-include",
-        "src/static/*"
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
       ],
       "jinja": true
     }
